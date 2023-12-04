@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="icon" type="img/png" href="img/cat-1.jpeg"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/sanju.jpg" alt="logo" style="width:50px">
+        </a>
+        <div class="container justify-content-end">
+            <nav class="navbar-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">fqa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </nav>
+
+    <div id="pets" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#pets" data-slide-to="0" class="active"></li>
+          <li data-target="#pets" data-slide-to="1"></li>
+          <li data-target="#pets" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/dog-1.jpg" alt="dog" width="100" height="100"">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cat-2.jpeg" alt="cat" width="100" height="100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fish-4.jpeg" alt="fish" width="100" height="100">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#pets" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#pets" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      
+   
+
+    <div class="container text-center m-5">
+        <h2>About Pets</h2>
+        <p>A pet, or companion animal, is an animal kept primarily for a person's company or entertainment rather than as a working animal, livestock, or a laboratory animal. Popular pets are often considered to have attractive/cute appearances, intelligence, and relatable personalities, but some pets may be taken in on an altruistic basis (such as a stray animal) and accepted by the owner regardless of these characteristics.
+
+            Two of the most popular pets are dogs and cats. Other animals commonly kept include rabbits; ferrets; pigs; rodents such as gerbils, hamsters, chinchillas, rats, mice, and guinea pigs; birds such as parrots, passerines, and fowls; reptiles such as turtles, lizards, snakes, and iguanas; aquatic pets such as fish, freshwater snails, and saltwater snails; amphibians such as frogs and salamanders; and arthropod pets such as tarantulas and hermit crabs. Small pets may be grouped together as pocket pets, while the equine and bovine group include the largest companion animals.
+            
+            Pets provide their owners, or guardians,[1] both physical and emotional benefits. Walking a dog can provide both the human and the dog with exercise, fresh air, and social interaction. Pets can give companionship to people who are living alone or elderly adults who do not have adequate social interaction with other people. There is a medically approved class of therapy animals that are brought to visit confined humans, such as children in hospitals or elders in nursing homes. Pet therapy utilizes trained animals and handlers to achieve specific physical, social, cognitive, or emotional goals with patients.</p>
+    </div>
+    <div class="container">
+        <div class="card-columns">
+            <div class="card ">
+                <div class="card-body text-center">
+                    <i class="fas fa-dog"></i>
+                   <a class="card-link" href="#">Dogs </a>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-body text-center">
+                    <i class="fas fa-cat"></i>
+                    <a class="card-link" href="#">Cats</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-dove"></i>
+                    <a class="card-link" href="#">Parrots</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-feather"></i>
+                    <a class="card-link" href="#">Ducks</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-fish"></i>
+                    <a class="card-link" href="#">Fish</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="fas fa-horse-head"></i>
+                    <a class="card-link" href="#">Horse</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-4">
+                <h3>About Dog?</h3>
+                <p>The dog is a domesticated descendant of the wolf. Also called the domestic dog, it is derived from the extinct Pleistocene wolf, and the modern wolf is the dog's nearest living relative. Dogs were the first species to be domesticated by hunter-gatherers over 15,000 years ago before the development of agriculture.</p>
+            </div>
+            <div class="col-4">
+                <h3>About Cat?</h3>
+                <p>The cat is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family.</p>
+            </div>
+            <div class="col-4">
+                <h3>About Fish?</h3>
+                <p>Fish are aquatic, craniate, gill-bearing animals that lack limbs with digits. Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center m-5">
+        <h2>Details about pets</h2>
+        <p>pet, any animal kept by human beings as a source of companionship and pleasure. While a pet is generally kept for the pleasure that it can give to its owner, often, especially with horses, dogs, and cats, as well as with some other domesticated animals, this pleasure appears to be mutual.</p>
+       
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="img/dog-1.jpg" alt="dog" width="250" height="150">
+            <p> Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.</p>
+        </div>
+        <div class="col-3">
+            <img src="img/cat-1.jpeg" alt="cat" width="250" height="150">
+            <p> It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family.</p>
+        </div>
+        <div class="col-3">
+            <img src="img/parrot.jpeg" alt="parrot" width="250" height="150">
+            <p>Many parrots are vividly coloured, and some are multi-coloured. Most parrots exhibit little or no sexual dimorphism in the visual spectrum.</p>
+        </div>
+        <div class="col-3">
+            <img src="img/fish.jpeg" alt="fish" width="250" height="150">
+            <p>Recall that vertebrates are animals with internal backbones. Most fish are streamlined in their general body form. The word fish is the same whether it is singular or plural—you can talk about one fish or ten fish.</p>
+        </div>
+
+    </div>
+
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-6">
+                <img src="img/pet-1.jpeg" alt="pets" width="500" height="300">
+            </div>
+            <div class="col-6">
+                <h3>Relation with pets</h3>
+                <p>People most commonly get pets for companionship, to protect a home or property, or because of the perceived beauty or attractiveness of the animals.[2] A 1994 Canadian study found that the most common reasons for not owning a pet were lack of ability to care for the pet when traveling (34.6%), lack of time (28.6%), and lack of suitable housing (28.3%), with dislike of pets being less common (19.6%).[2] Some scholars, ethicists, and animal rights organizations have raised concerns over keeping pets because of the lack of autonomy and the objectification of non-human animals.[3</p>
+            </div>
+
+         
+        </div>
+    </div>
+
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-6">
+                <h3>Behavior of pets</h3>
+                <p>Dog behavior is the internally coordinated responses of individuals or groups of domestic dogs to internal and external stimuli.[1] It has been shaped by millennia of contact with humans and their lifestyles. As a result of this physical and social evolution, dogs have acquired the ability to understand and communicate with humans, and they are uniquely attuned in these fellow mammals.[2] Behavioral scientists have uncovered a wide range of social-cognitive abilities in domestic dogs.</p>
+            </div>
+            <div class="col-6">
+                <img src="img/pet-2.jpeg" alt="pet2" width="500" height="300">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+        
+        <footer
+            class="text-center text-lg-start text-dark"
+             style="background-color: black">
+        </footer>
+                
+            <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: black"
+             >
+             <div class="me-5">
+                <a href="#" >@sanjuvarma1713@gmail.com</a>
+             </div>
+            </section> 
+    </div>
+
+</body>
+</html>

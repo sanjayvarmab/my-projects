@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Java Script Task</h1>
+        <script>
+            //Create a "Hello World" program in Javascript that prints the text "Hello, World!" to the console//
+            var hello = "Hello, world!";
+            console.log(hello);
+
+            //Write a program that asks the user for their name and then prints a personalized greeting to the console.//
+            
+         /*  let nameA;
+            nameA = prompt("What is your name?");  
+            console.log("Hello"+ " " +nameA);   
+            
+            //Area and Perimeter of a rectangle//
+
+            function areaRectangle(a,b){
+                let area = a*b;
+                return area;
+            }
+            function perimeterRectangle(a,b){
+                let perimeter = 2 * (a+b);
+                return perimeter;
+            }
+            let a = prompt("value of a:");
+            let b = prompt("value of b:");
+            console.log("Area= " + areaRectangle(a,b));
+            console.log("Perimetre= "+ perimeterRectangle(a,b));
+
+            //Arthimetic Operations//
+
+            function addition(x,y){
+                let addition = (x + y);
+                return addition;
+            }
+            function Subtraction(x,y){
+                let Subtraction = (x-y);
+                return Subtraction;
+            }
+            function division(x,y){
+                let division = (x/y);
+                return division; 
+            }
+            function multiplication (x,y){
+                let multiplication = (x*y);
+                return multiplication;
+            }
+            let x = parseInt(prompt("value of x:"));
+            let y = parseInt(prompt("value of y:"));
+            console.log("Addition: "+ addition(x,y));
+            console.log("subtraction:" + Subtraction(x,y));
+            console.log("divison:" + division(x,y));
+            console.log("multiplication:" + multiplication(x,y));
+
+
+            //Write a program that takes an array of numbers and calculates the sum of all the numbers in the array. The program should print the sum to the console.//
+
+
+            const number1 = [45, 4, 50, 10, 18, 22];
+            let sum = number1.reduce(myFunction);
+            function myFunction(total,value){
+                return total+value;
+
+            }
+            console.log(sum);  
+
+            //Write a program that takes an array of strings and sorts them alphabetically. The program should print the sorted array to the console.//
+
+            function countVowel(vowel){
+                const count = vowel.match(/[aeiou]/gi).length;
+                return count;
+            }
+            const vowel = prompt("enter a string:");
+            const result = countVowel(vowel);
+            console.log(result);
+
+            //Write a program that takes an array of strings and sorts them alphabetically. The program should print the sorted array to the console.//
+
+            const name = ["sanjay", "gopi", "maruthi", "varma", "sai"];
+            name.sort();
+            console.log(name);
+
+
+            //Random numbers//
+
+            function guessNumber(){
+                const randomNumber = Math.floor(Math.random() * 100)+3;
+                let guess = parseInt(prompt("Guess a number betweem 1 and 100: "));
+                let attempts = 2;
+                while (guess !== randomNumber){
+                    if(guess > randomNumber){
+                        guess = parseInt(prompt("To high! Guess again: "));
+                    }else{
+                        guess = parseInt(prompt("Too low! Guess again: "));
+                    }
+                    attempts++;
+                }    
+
+                    alert("Congratulations! You guessed the number.");
+                
+            }
+            guessNumber();
+
+            //Capitalize sentence//
+            function capitalizeSentence(sentence) {
+  const words = sentence.split(" ");
+  const capitalizedWords = [];
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+    capitalizedWords.push(capitalizedWord);
+  }
+
+  const capitalizedSentence = capitalizedWords.join(" ");
+  console.log(capitalizedSentence);
+}
+
+capitalizeSentence("this is a sentence");*/
+
+
+
+//Prime Numbers//
+
+function isPrime(number){
+    for (let i = 2; i<number; i++){
+        if (number% i=== 0){
+            return false;
+        }
+    }
+    return true;
+}
+const number = 10;
+if (isPrime (number)){
+    console.log("is prime number");
+
+}else{
+    console.log("is not a prime number");
+}
+
+           
+            
+        </script>
+    </body>
+   
+</html>

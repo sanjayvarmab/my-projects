@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        for in 
+    </head>
+    <body>
+        <p id = "arr"></p>
+        <script>
+            
+            //Write a for-in loop that iterates over the properties of an object and outputs the name and value of each property to the console.//
+
+            let  cars = [
+                {car: "bmw", color: "black", model: "5Series"},
+                {car: "benz", color: "red", model: "C class"},
+                {car: "suzuki", color: "wight", model: "swift"},
+                {car: "Tata", color: "yellow",model: "tiago"},
+            ];
+            let count = 0;
+            let length = cars.length;
+            for (let index in cars){
+               // if (count >= length -2 ){
+                //    let obj = cars[index];
+                    console.log(index);
+               // }
+                count++;
+                
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Student Data</h2>
+    </head>
+    <body>
+        <div id = "studentdata"></div>
+
+        <script>
+
+            let student = [
+                {
+                    id: 1,
+                    name: "jhon don",
+                    age: 19,
+                    greade: "A",
+                    subject:["math", "science", "english"],
+                    address:{
+                        street: "123 main street",
+                        city: "new york",
+                        state: "NY",
+                        country: "USA"
+                    }
+                }
+            ];
+
+            let list = document.getElementById("studentdata");
+
+            for (let i = 0; i < student.length; i++){
+                let listItem = document.createElement("ul");
+
+                let nestedUl = document.createElement("li");
+                listItem.appendChild(nestedUl);
+
+                
+
+                for (let key in student [i]){
+                    let nestedListItem = document.createElement("li");
+                    nestedListItem.innerHTML = key + ":" + student[i][key];
+                    nestedUl.appendChild(nestedListItem);
+                }
+
+                list.appendChild(listItem)
+
+
+            }
+        </script>
+    </body>
+</html>

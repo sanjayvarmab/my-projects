@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Enter the correct password</h1>
+    </head>
+    <body>
+        <script>
+            let correctPassword = "sanjay";
+            let userInput;
+            do{
+                userInput = prompt("Enter the password!");
+                if(userInput === correctPassword){
+                    console.log("you have entered correct password");
+                }else{
+                    console.log("you have entered wrong password. Try again!");
+                }
+
+
+            }while (userInput !== correctPassword);
+        </script>
+    </body>
+</html>

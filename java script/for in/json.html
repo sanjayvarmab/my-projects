@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>JSON</h1>
+    </head>
+    <boby>
+        <div id = "tableContainer"></div>
+        <script>
+            let data = [
+            { name: "John", age: 30, city: "New York" },
+            { name: "Alice", age: 25, city: "London" },
+            { name: "Bob", age: 35, city: "Paris" },
+            { name: "sanjay", age: 26, city: "hyd"}
+            ];
+            let table = document.createElement("table");
+            for(let i=0; i < data.length; i++){
+                let row = document.createElement("tr");
+
+                for (let key in data[i]){
+                    let cell = document.createElement("td");
+                    cell.innerHTML = data[i][key];
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+            let tableContainer = document.getElementById("tableContainer");
+            tableContainer.appendChild(table);
+
+
+        </script>
+    </boby>
+</html>

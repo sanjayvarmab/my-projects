@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>unorder list</h1>
+    </head>
+    <body>
+        <div id = "listContainer"></div>
+
+        <script>
+            let data = [ 
+                {car: "BMW", Model: 2010,color: "red"},
+
+                {car: "Volvo", Model: 2015,color: "white"},
+
+                {car: "Benz", Model: 2012,color: "blue"}
+            ];
+            let list = document.createElement("ul");
+
+
+            for (let i=0; i<data.length; i++){
+                let listItem = document.createElement("li");
+
+                let nestedUl = document.createElement("li"); 
+                listItem.appendChild(nestedUl);
+
+                for (let key in data[i]){
+                    let nestedListItem = document.createElement("li");
+                    nestedListItem.innerHTML = key +" : " + data[i][key] ;
+                    nestedUl.appendChild(nestedListItem);
+                }
+
+                list.appendChild(listItem);
+                
+            }
+            let listContainer = document.getElementById("listContainer");
+            listContainer.appendChild(list);
+        </script>
+    </body>
+</html>

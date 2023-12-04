@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+            width:auto ;
+            height:auto ;
+        }
+        </style>
+        <h1>Student Data</h1>
+    </head>
+    <body>
+        <table id = "student_data" ,style="width:100%">
+            
+            <div id ="student_data_body">
+
+            </div>
+        </table>
+        <script>
+            let student = [
+            {
+    id: 1,
+    name: "John Doe",
+    age: 18,
+    grade: "A",
+    subjects: ["Math", "Science", "English"],
+    address: {
+      street: "123 Main Street",
+      city: "New York",
+      state: "NY",
+      country: "USA"
+    }
+},
+
+{
+    id: 2,
+    name: "sanjay",
+    age: 25,
+    grade: "a",
+    subjects: ["math", "telugu", "english"],
+}
+            ];
+            let container = document.getElementById("student_data_body");
+
+            let table = document.createElement("table");
+            container.appendChild(table);
+
+            for (let key in student){
+                let value = student[key];
+
+                if(Array.isArray(value)){
+                    let row = table.insertCol();
+                    let cell1 = row.insertCell();
+                    cell1.innerHTML = key;
+
+                    let cell2 = row.insertCell();
+                    cell2.innerHTML = value.join(", ");
+                }else if (typeof value === "object"){
+                    for (let subKey in value){
+                        let subValue = value[subKey];
+                        let row = table.insertRow();
+                        let cell1 = row.insertCell();
+                        cell1.innerHTML = subKey;
+
+                        let cell2 = row.insertCell();
+                        cell2.innerHTML = subValue;
+                    }
+                }else{
+                    let row = table.innerRow();
+                    let cell = row.innerCell();
+                    cell1.innerHTML = key;
+
+                    let cell2 = row.insertCell();
+                    cell2.innerHTML = value;
+                }
+
+                
+            }
+
+        
+
+        
+
+            
+        </script>
+    </body>
+</html>

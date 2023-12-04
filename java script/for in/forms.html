@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>forms</h2>
+    </head>
+    <body>
+        
+
+
+        <form id = "myForm">
+            <input type = "text" id = "firstname" placeholder="firstname" required >
+            <input type = "text" id = "lastname" placeholder="lastname" required>
+            <input type = "text" id = "email" placeholder = "email" required>
+            <input type = "submit" value = "submit">
+
+        </form>
+
+        <div id = "result"></div>
+
+        <script>
+            let form = document.getElementById("myForm");
+            
+            form.addEventListener("submit" , function(event){
+                event.preventDefault()//prevent the form from submitting
+                
+                let firstname = document.getElementById("firstname").value;
+                console.log(firstname);
+                 
+                let lastname = document.getElementById("lastname").value;
+                console.log(lastname);
+
+                let email = document.getElementById("email").value;
+                console.log(email);
+
+
+
+                 let formData = "First name: " +firstname +"<br>Last name: " +lastname + "<br>Email: "+email
+
+                 let resultDiv = document.getElementById("result");
+
+                 resultDiv.innerHTML = formData
+                 
+            })
+
+            
+
+        </script>
+
+    </body>
+</html>

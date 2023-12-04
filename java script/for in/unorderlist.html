@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>unorder list</h2>
+    </head>
+    <body>
+        <div id = "unorder"></div>>
+
+        <script>
+            let data = [ 
+                {car: "BMW", Model: 2010,color: "red"},
+
+                {car: "Volvo", Model: 2015,color: "white"},
+
+                {car: "Benz", Model: 2012,color: "blue"}
+            ];
+
+            let list = document.getElementById("unorder");
+      for (let i = 0; i < data.length; i++) {
+         let listItem = document.createElement("ul");
+
+         let nestedUl = document.createElement("li");
+         listItem.appendChild(nestedUl)
+         
+
+
+         for (let key in data [i]){
+        let nestedListItem = document.createElement("li");
+        nestedListItem.innerHTML = key + ":" + data[i][key];
+        nestedUl.appendChild(nestedListItem);
+        
+      }
+       list.appendChild(listItem);
+
+      }
+
+    
+      
+      
+      
+        </script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>student data</h1>
+    </head>
+
+    <body>
+
+        <script>
+             const studentData = [
+  {
+    id: 1,
+    name: "jhon don",
+    age: 19,
+    grade: "A",
+    subjects: ["math", "science", "english"],
+    address: {
+      street: "123 main street",
+      city: "new york",
+      state: "NY",
+      country: "USA"
+    }
+  },
+
+  {
+    id: 2,
+    name: "jhon",
+    age: 18,
+    grade: "A",
+    subjects: ["math", "science", "english"],
+    address: {
+      street: "123 main street",
+      city: "new york",
+      state: "NY",
+      country: "USA"
+    }
+  },
+
+  {
+    id: 3,
+    name: "jhon",
+    age: 18,
+    grade: "A",
+    subjects: ["math", "science", "english"],}
+];
+ for (let i = 0; i < studentData.length; i++) {
+    const student = studentData[i];
+  const ul = document.createElement('ul');
+
+  for (const key in student) {
+    const li = document.createElement('li');
+    
+  //For nested properties, create sub UL 
+
+  if (typeof student[key]==="object"){
+    const subUl = document.createElement("ul");
+
+    for (const subkey in student[key]){
+      const subLi = document.createElement("li");
+      subLi.textContent=`${subkey}: ${student[key][subkey]}`;
+      subUl.appendChild(subLi);
+    }
+    li.appendChild(subUl);
+  }else{
+    li.textContent=`${key}:${student[key]}`;
+
+  }
+  ul.appendChild(li);
+  }
+
+
+  document.body.appendChild(ul);
+
+};
+        </script>
+    </body>
+</html>
